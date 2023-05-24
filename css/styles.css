@@ -42,8 +42,8 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 .visually-hidden {
   position: absolute;
@@ -443,7 +443,8 @@ img {
 .footer-logo-block {
   margin-right: 120px;
 }
-/* footer Socials icon style */
+/* footer Social icons style */
+
 .socials-footer {
   display: flex;
   justify-content: center;
@@ -468,6 +469,67 @@ img {
 }
 .footer-social-block {
   margin-right: 80px;
+}
+/* Footer Subscribe Form */
+
+.footer-subscribe-block {
+  width: 453px;
+}
+.subscribe-form {
+}
+.subscribe-line {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-field {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--back-color);
+  border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  background-color: transparent;
+  color: var(--back-color);
+  outline: transparent;
+  outline-offset: -1px;
+
+  padding: 0;
+  padding-left: 16px;
+}
+input::placeholder {
+  color: var(--back-color);
+}
+.subsribe-btn-wrap {
+  position: relative;
+  color: var(--back-color);
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+
+  width: 165px;
+  height: 40px;
+
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+  color: var(--back-color);
+  background: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+.subscribe-icon {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  fill: currentColor;
 }
 /**
   |============================
@@ -653,11 +715,13 @@ img {
   padding: 0;
   padding-left: 38px;
 }
-.form-field:focus {
-  /* outline: 1px solid var(--button-color); */
+.form-field:focus,
+.form-comment:focus {
   border-color: var(--button-color);
 }
-
+.form-comment:focus::placeholder {
+  color: var(--button-color);
+}
 .form-icon {
   position: absolute;
   top: 50%;
@@ -669,7 +733,6 @@ img {
 .form-field:focus + .form-icon {
   fill: var(--button-color);
 }
-
 .form-comment {
   display: block;
   width: 100%;
@@ -683,9 +746,7 @@ img {
   transition: border-color var(--transf-units);
   outline: transparent;
 }
-.form-comment:focus {
-  border-color: var(--button-color);
-}
+
 .form-agreement {
   display: flex;
   justify-content: flex-start;

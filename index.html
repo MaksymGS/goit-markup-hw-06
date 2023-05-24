@@ -522,14 +522,23 @@
         </div>
         <div class="footer-subscribe-block">
           <p class="footer-social">Subscribe</p>
-          <form autocomplete="on">
-            <label for="">
-              <input type="email" />
-            </label>
-            <button type="submit">Subscribe</button>
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
+          <form class="subscribe-form">
+            <label for="subscribe_email"></label>
+            <div class="subscribe-line">
+              <input
+                class="subscribe-field"
+                type="email"
+                name="subscribe_email"
+                id="subscribe_email"
+                required
+                placeholder="E-mail" />
+              <div class="subsribe-btn-wrap">
+                <button class="subscribe-btn" type="submit">Subscribe</button>
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -543,7 +552,6 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form name="modal_form">
@@ -599,7 +607,7 @@
             placeholder="Text input"></textarea>
 
           <label class="form-agreement">
-            <input class="form-check-input" type="checkbox" name="modal_agreement" />
+            <input class="form-check-input" type="checkbox" name="modal_agreement" required />
             <svg class="form-custom-check" width="16" height="16">
               <use class="unchecked" href="./images/icons.svg#icon-unchecked"></use>
               <use class="checked" href="./images/icons.svg#icon-check"></use>

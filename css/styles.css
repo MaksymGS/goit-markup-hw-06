@@ -443,8 +443,12 @@ img {
 .footer-logo-block {
   margin-right: 120px;
 }
+
 /* footer Social icons style */
 
+.footer-social-block {
+  margin-right: 80px;
+}
 .socials-footer {
   display: flex;
   justify-content: center;
@@ -467,19 +471,13 @@ img {
 .socials-link-footer:focus {
   background-color: var(--hover-socials);
 }
-.footer-social-block {
-  margin-right: 80px;
-}
+
 /* Footer Subscribe Form */
 
 .footer-subscribe-block {
-  width: 453px;
 }
 .subscribe-form {
-}
-.subscribe-line {
   display: flex;
-  justify-content: space-between;
 }
 .subscribe-field {
   width: 264px;
@@ -498,17 +496,15 @@ img {
 
   padding: 0;
   padding-left: 16px;
+  margin-right: 24px;
 }
 input::placeholder {
-  color: var(--back-color);
-}
-.subsribe-btn-wrap {
-  position: relative;
   color: var(--back-color);
 }
 .subscribe-btn {
   display: flex;
   align-items: center;
+  gap: 16px;
 
   width: 165px;
   height: 40px;
@@ -525,10 +521,6 @@ input::placeholder {
   padding: 8px 24px;
 }
 .subscribe-icon {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
   fill: currentColor;
 }
 /**
@@ -577,7 +569,9 @@ input::placeholder {
   border: 1px solid var(--nav-border);
   border-top: none;
 }
+
 /* Overlay */
+
 .overlay {
   position: absolute;
   top: 0;
